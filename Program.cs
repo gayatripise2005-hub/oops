@@ -1246,66 +1246,7 @@ namespace Program
 
     //=============================================================================================================================================================================================
 
-    ////point2D,point3D
-
-    public class Point2D
-    {
-        public float X { get; set; }
-        public float Y { get; set; }
-
-        public Point2D()
-        {
-            X = 0.0f;
-            Y = 0.0f;
-        }
-        public Point2D(float x, float y)
-        {
-            X = x;
-            Y = y;
-        }
-
-        public override string ToString()
-        {
-            return $"({X},{Y})";
-        }
-    }
-    public class Point3D : Point2D
-    {
-        public float Z { get; set; }
-
-        public Point3D() : base()
-        {
-            Z = 0.0f;
-        }
-        public Point3D(float x, float y, float z) : base(x, y)
-        {
-            Z = z;
-        }
-
-        public override string ToString()
-        {
-            return $"({X},{Y},{Z})";
-        }
-
-    }
-    class Program
-    {
-        public static void Main()
-        {
-            Point2D p2 = new Point2D(2, 6);
-
-            Console.WriteLine(p2);
-
-            Point3D p3 = new Point3D(4, 2, 5);
-
-            Console.WriteLine(p3);
-
-        }
-    }
-
-
-    //=====================================================================================================================================================================================================
-
+   
 
 
 

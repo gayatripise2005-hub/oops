@@ -154,7 +154,7 @@ namespace Program
     //        Console.WriteLine();
     //    }
     //}
-    // public class program
+    // public class Program
     //{
     //    public static void Main( string[] args )
     //    {
@@ -552,7 +552,7 @@ namespace Program
     //---------HomeWork-----------------------------------------------------------------------------------------------------------------------------------------
 
 
-    //using of Constructor
+    ///using of Constructor
 
 
     //public class Program
@@ -648,7 +648,7 @@ namespace Program
     //     {
     //         return $" IsActive:{IsActive}";
     //     }
-    //     public class program
+    //     public class Program
     //     {
     //         public static void Main(string[] args)
     //         {
@@ -680,7 +680,7 @@ namespace Program
     //        return $"AdminId:{AdminId},LoginTime:{LoginTime}";
     //    }
 
-    //    public class program
+    //    public class Program
     //    {
     //        public static void Main()
     //        {
@@ -727,7 +727,7 @@ namespace Program
     //    {
     //       return $"Name:{Name},Age:{age},City:{city}";
     //    }
-    //    public class program()
+    //    public class Program()
     //    {
     //        public static void Main()
     //        {
@@ -785,7 +785,7 @@ namespace Program
     //        return $"User[UserName:{UserName},Email:{Email},Age:{Age},UserId:{UserId}]";
     //    }
     //}
-    //class program
+    //class Program
     //{
     //    public static void Main(string[] args)
     //    {
@@ -813,18 +813,31 @@ namespace Program
     //class Admin
     //{
     //    public string Name { get; set; }
-    //    public Admin (string name)
+    //    public Admin(string name)
     //    {
     //        Name = name;
-    //        Console.WriteLine("Admin Called");
+
     //    }
     //}
-    //class SuperAdmin
+    //class SuperAdmin:Admin
     //{
     //    public int PermissionLevel { get; set; }
-    //    public SuperAdmin(string  name, int permissionLevel)
+    //    public SuperAdmin(string name, int permissionLevel):base(name)
     //    {
-
+    //        PermissionLevel = permissionLevel;
+    //    }
+    //    public void PrintDetails()
+    //    {
+    //        Console.WriteLine("Name:" + Name);
+    //        Console.WriteLine("Permission Level:"+PermissionLevel);
+    //    }
+    //}
+    //public class Program()
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        SuperAdmin obj = new SuperAdmin("Aryan", 5);
+    //        obj.PrintDetails(); 
     //    }
     //}
     //==============================================================================================================================================================================
@@ -872,7 +885,7 @@ namespace Program
     //        return $"Hello {Name}";
     //    }
     //}
-    //public class program
+    //public class Program
     //{
     //    public static void Main(string[] args)
     //    {
@@ -945,18 +958,17 @@ namespace Program
     //    {
     //        counter++;
     //    }
-    //    public class program
+
+    //}
+    //public class Program
+    //{
+    //    public static void Main(string[] args)
     //    {
-    //        public static void Main(string[] args)
-    //        {
-    //            CounterDemo c1 = new CounterDemo();
-    //            CounterDemo c2 = new CounterDemo();
-    //            CounterDemo c3 = new CounterDemo();
-    //            Console.WriteLine("Counter value:" + CounterDemo.counter);
-
-    //        }
+    //        CounterDemo c1 = new CounterDemo();
+    //        CounterDemo c2 = new CounterDemo();
+    //        CounterDemo c3 = new CounterDemo();
+    //        Console.WriteLine("Count:"+CounterDemo.counter);
     //    }
-
     //}
 
     //===========================================================================================================================================================================================
@@ -974,8 +986,8 @@ namespace Program
     ///inheritance
     ///
 
-    using System;
-    using System.Net;
+    //using System;
+    //using System.Net;
 
     //public class P : Object
     //{
@@ -1102,8 +1114,8 @@ namespace Program
 
     //============================================================================================================================================================================================================
 
-    // //7-feb-2026
-    //  //homework
+    // //7-feb-2026 =============================================================================================================================================================================
+    //  //homework  =============================================================================================================================================================================
 
     ////Circle,Cylinder
 
@@ -1208,9 +1220,7 @@ namespace Program
     //    public string School { get; set; }
     //    public double Pay { get; set; }
 
-    //    public Staff(string name, string address,
-    //                 string school, double pay)
-    //        : base(name, address)
+    //public Staff(string name, string address, string school, double pay) : base(name, address)
     //    {
     //        School = school;
     //        Pay = pay;
@@ -1253,7 +1263,7 @@ namespace Program
             X = x;
             Y = y;
         }
-        
+
         public override string ToString()
         {
             return $"({X},{Y})";
@@ -1271,7 +1281,7 @@ namespace Program
         {
             Z = z;
         }
-       
+
         public override string ToString()
         {
             return $"({X},{Y},{Z})";
@@ -1283,13 +1293,13 @@ namespace Program
         public static void Main()
         {
             Point2D p2 = new Point2D(2, 6);
-          
+
             Console.WriteLine(p2);
-           
+
             Point3D p3 = new Point3D(4, 2, 5);
-         
+
             Console.WriteLine(p3);
-           
+
         }
     }
 
